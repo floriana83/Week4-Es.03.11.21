@@ -32,7 +32,7 @@ form{
     border-radius: 20px;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     line-height: 30px;
     font-family: 'Exo 2', sans-serif;
     display: flex;
@@ -44,12 +44,15 @@ button {
     background: #30ad41;
     border: 2px #30ad41 solid;
     color: #ffff;
-    text-decoration: none;
     padding: 10px 30px;
     font-size: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    display:inline-block;
+    display:flex;
     cursor: pointer;   
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
 }
 
