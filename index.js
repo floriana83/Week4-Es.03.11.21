@@ -11,6 +11,21 @@ const render = (container, items) =>
   }
 });
 
+// variante con lista come abbiamo fatto in classe
+
+// const render = (container, items) =>
+// {
+//   const elements = items.map((element) =>
+//   {
+//   if(element.completed === true) {
+//     return `<li><input type="checkbox" name="testNew" id="test" checked>${element.title}${element.completed}
+//             </li>`
+//   } else {
+//     return `<li><input type="checkbox" name="testNew" id="test">${element.title}${element.completed}
+//             </li>`
+//   }
+// });
+
 const removeBtn = document.querySelector(".remove-Btn");
 removeBtn.addEventListener("click", () => {
   elements.pop();
@@ -29,6 +44,7 @@ removeBtn.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const list = q('p');
+  // const list = q('ul');  nel caso in cui faccio una lista la mia costante dovrà inserire la lista dopo ul
   render(list, dati);
 });
 
