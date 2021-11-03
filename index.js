@@ -11,9 +11,20 @@ const render = (container, items) =>
   }
 });
 
+const removeBtn = document.querySelector(".remove-Btn");
+removeBtn.addEventListener("click", () => {
+  elements.pop();
+
   const content = elements.join('');
 
   container.innerHTML = content;
+}
+);
+
+  const content = elements.join('');
+
+  container.innerHTML = content;
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
